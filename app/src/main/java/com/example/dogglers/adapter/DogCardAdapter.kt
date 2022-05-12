@@ -24,10 +24,8 @@ import androidx.recyclerview.widget.RecyclerView
  * Adapter to inflate the appropriate list item layout and populate the view with information
  * from the appropriate data source
  */
-class DogCardAdapter(
-    private val context: Context?,
-    private val layout: Int
-): RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
+class DogCardAdapter(private val context: Context?, private val layout: Int)
+    : RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
 
     // TODO: Initialize the data using the List found in data/DataSource
 
