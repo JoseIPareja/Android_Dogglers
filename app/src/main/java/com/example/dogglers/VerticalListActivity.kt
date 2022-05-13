@@ -30,10 +30,7 @@ class VerticalListActivity : AppCompatActivity() {
         binding = ActivityVerticalListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.verticalRecyclerView.adapter = DogCardAdapter(
-            applicationContext,
-            Layout.VERTICAL
-        )
+        binding.verticalRecyclerView.adapter = DogCardAdapter(applicationContext, Layout.VERTICAL)
 
         // Specify fixed size to improve performance
         binding.verticalRecyclerView.setHasFixedSize(true)

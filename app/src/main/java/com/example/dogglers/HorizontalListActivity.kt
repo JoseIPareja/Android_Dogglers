@@ -30,10 +30,7 @@ class HorizontalListActivity : AppCompatActivity() {
         binding = ActivityHorizontalListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.horizontalRecyclerView.adapter = DogCardAdapter(
-            applicationContext,
-            Layout.HORIZONTAL
-        )
+        binding.horizontalRecyclerView.adapter = DogCardAdapter(applicationContext, Layout.HORIZONTAL)
 
         // Specify fixed size to improve performance
         binding.horizontalRecyclerView.setHasFixedSize(true)
